@@ -17,14 +17,14 @@ fn main() {
 
     // kindly note this data is read from array. Array starts from zero (0) as first number
     let operator = input_vec[0];  //this is the first input
-    let paka1 = input_vec[1].parse::<f64>().unwrap();  //this is the second input
+    let num1 = input_vec[1].parse::<f64>().unwrap();  //this is the second input
     let num2 = input_vec[2].parse::<f64>().unwrap();  //this is the third input 
 
     let result = match operator {
-        "+" => paka1 + num2,
-        "-" => paka1 - num2,
-        "*" => paka1 * num2,
-        "/" => paka1 / num2,
+        "+" => num1 + num2,
+        "-" => num1 - num2,
+        "*" => num1 * num2,
+        "/" => num1 / num2,
         _ => {
             println!("Invalid operator. Only +, -, *, / are allowed."); // Proccessing the data from the the above intialized varriables
             return;
